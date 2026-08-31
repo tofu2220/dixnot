@@ -1,7 +1,0 @@
-bar {
-    position top
-
-    status_command while date '+%Y-%m-%d %H:%M:%S'; do
-        sleep 1
-    done
-}

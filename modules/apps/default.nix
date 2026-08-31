@@ -1,7 +1,7 @@
-{ ... }:
+{ unstablePkgs, ... }:
 
 {
-  imports = [
-    ./brave.nix
+  environment.systemPackages = with unstablePkgs; [
+    brave-origin
   ];
 }
