@@ -1,7 +1,7 @@
 { unstablePkgs, ... }:
 
 {
-  environment.systemPackages = [
-    unstablePkgs.zed-editor
+  environment.systemPackages = with unstablePkgs; [
+    zed-editor
   ];
 }

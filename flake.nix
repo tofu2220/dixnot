@@ -17,6 +17,7 @@
 
       modules = [
         ./configuration.nix
+        ./modules/apps
         ./modules/dev
       ];
     in
