@@ -1,0 +1,13 @@
+# Export the Sway environment to D-Bus and systemd services.
+# This allows services such as xdg-desktop-portal-gtk to open windows.
+exec dbus-update-activation-environment --systemd \
+    DISPLAY \
+    WAYLAND_DISPLAY \
+    SWAYSOCK \
+    XDG_CURRENT_DESKTOP
+
+# Track the lifetime of the Sway session.
+exec systemctl --user start sway-session.target
+
+exec swaymsg -t subscribe '["shutdown"]' && \
+    systemctl --user stop sway-session.target
