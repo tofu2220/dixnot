@@ -4,9 +4,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/system/base.nix
-    ../../modules/system/networking.nix
-    ../../modules/system/audio.nix
-    ../../modules/system/printing.nix
+    ../../modules/system/common.nix
     ../../modules/desktop/sway.nix
     ../../modules/desktop/plasma.nix
   ];
