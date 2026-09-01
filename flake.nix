@@ -26,7 +26,7 @@
       };
 
       modules = [
-        ./hosts/nixos
+        ./hosts/dell
 
         home-manager.nixosModules.home-manager
 
