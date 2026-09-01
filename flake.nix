@@ -15,23 +15,26 @@
     let
       system = "x86_64-linux";
 
+      pkgs = import nixpkgs {
+        inherit system;
+        config.allowUnfree = true;
+      };
+
       unstablePkgs = import nixpkgs-unstable {
         inherit system;
         config.allowUnfree = true;
       };
 
       modules = [
-        ./configuration.nix
-        ./modules/apps
-        ./modules/dev
-        ./modules/desktop/sway
+        ./hosts/nixos
 
         home-manager.nixosModules.home-manager
 
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.tofu = import ./home/tofu.nix;
+          home-manager.extraSpecialArgs = { inherit unstablePkgs; };
+          home-manager.users.tofu = import ./home/tofu;
         }
       ];
     in
@@ -42,6 +45,12 @@
         specialArgs = {
           inherit unstablePkgs;
         };
+      };
+
+      homeConfigurations.tofu = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs = { inherit unstablePkgs; };
+        modules = [ ./home/tofu ];
       };
     };
 }

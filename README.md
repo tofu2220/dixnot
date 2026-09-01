@@ -2,13 +2,18 @@
 
 ## Usage
 
-After changing dotfiles, apply the Home Manager configuration:
+This configuration separates machine-specific settings under `hosts/`, reusable
+NixOS modules under `modules/`, and the `tofu` user profile under `home/tofu/`.
+
+After changing user applications, developer tools, or dotfiles, build the Home
+Manager profile:
 
 ```bash
-home-manager switch --flake .#tofu
+home-manager build --flake .#tofu
 ```
 
-After changing `.nix` configuration files, rebuild NixOS with the appropriate action:
+Apply the complete NixOS configuration, including the integrated Home Manager
+profile, with the appropriate action:
 
 ```bash
 sudo nixos-rebuild switch --flake .#nixos
