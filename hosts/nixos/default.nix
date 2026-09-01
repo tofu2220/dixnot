@@ -7,7 +7,7 @@
     ../../modules/system/networking.nix
     ../../modules/system/audio.nix
     ../../modules/system/printing.nix
-    ../../modules/desktop/sway
+    ../../modules/desktop/sway.nix
     ../../modules/desktop/plasma.nix
   ];
 
