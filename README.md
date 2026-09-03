@@ -46,4 +46,4 @@ Available `nixos-rebuild` actions:
 ## Task
 
 - [ ] Default enable numlock in sway/config.d
-- [ ] Simplifield screenshot, maybe with satty and slurp, the current screenshot workflow is too damn complex
+- [ ] Simplifield screenshot, maybe with satty and slurp or something, the current screenshot workflow is too damn complex
