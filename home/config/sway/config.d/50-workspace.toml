@@ -1,0 +1,32 @@
+# workspace
+
+#
+# Workspaces:
+#
+    bindcode {
+        # Switch to workspace
+        $mod+10 workspace number 1
+        $mod+11 workspace number 2
+        $mod+12 workspace number 3
+        $mod+13 workspace number 4
+        $mod+14 workspace number 5
+        $mod+15 workspace number 6
+        $mod+16 workspace number 7
+        $mod+17 workspace number 8
+        $mod+18 workspace number 9
+        $mod+19 workspace number 10
+
+        # Move focused container to workspace
+        $mod+Shift+10 move container to workspace number 1
+        $mod+Shift+11 move container to workspace number 2
+        $mod+Shift+12 move container to workspace number 3
+        $mod+Shift+13 move container to workspace number 4
+        $mod+Shift+14 move container to workspace number 5
+        $mod+Shift+15 move container to workspace number 6
+        $mod+Shift+16 move container to workspace number 7
+        $mod+Shift+17 move container to workspace number 8
+        $mod+Shift+18 move container to workspace number 9
+        $mod+Shift+19 move container to workspace number 10
+    }
+    # Note: workspaces can have any name you want, not just numbers.
+    # We just use 1-10 as the default.

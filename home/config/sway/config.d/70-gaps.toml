@@ -1,0 +1,5 @@
+# Space between tiled windows
+gaps inner 4
+
+# Space between windows and screen edges
+gaps outer 2

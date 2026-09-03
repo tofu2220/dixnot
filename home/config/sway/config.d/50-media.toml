@@ -1,0 +1,16 @@
+#
+# Media Keys
+#
+    bindsym {
+        # Volume
+        XF86AudioRaiseVolume exec pamixer -ui 2
+        XF86AudioLowerVolume exec pamixer -ud 2
+        XF86AudioMute exec pamixer --toggle-mute
+
+        # Microphone
+        XF86AudioMicMute exec pamixer --default-source --toggle-mute
+
+        # Backlight
+        XF86MonBrightnessUp exec brightnessctl -c backlight set +5%
+        XF86MonBrightnessDown exec brightnessctl -c backlight set 5%-
+    }

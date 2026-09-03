@@ -1,0 +1,20 @@
+{
+  "theme": "Gruvbox Light",
+  "base_keymap": "VSCode",
+  "show_edit_predictions": false,
+
+  "ui_font_family": "DejaVu Sans",
+  "buffer_font_family": "Hack Nerd Font Mono",
+
+  "terminal": {
+    "font_family": "Hack Nerd Font",
+  },
+
+  "agent_buffer_font_family": "DejaVu Sans",
+
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false,
+  },
+}

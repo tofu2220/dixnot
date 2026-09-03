@@ -1,0 +1,18 @@
+#
+# To fix fcitx5 problem, have to manually start and stop session services
+#
+
+# Export the Sway environment before starting session services.
+exec dbus-update-activation-environment --systemd \
+    DISPLAY \
+    WAYLAND_DISPLAY \
+    SWAYSOCK \
+    XDG_CURRENT_DESKTOP && \
+    systemctl --user start sway-session.target
+
+# Stop session services when Sway exits.
+exec swaymsg -t subscribe '["shutdown"]' && \
+    systemctl --user stop sway-session.target
+
+# Start autotiling
+exec autotiling

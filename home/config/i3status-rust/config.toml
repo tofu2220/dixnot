@@ -1,0 +1,65 @@
+icons_format = " {icon} "
+
+[icons]
+icons = "material-nf"
+
+[theme]
+theme = "gruvbox-dark"
+
+[[block]]
+block = "cpu"
+interval = 2
+
+[[block]]
+block = "memory"
+interval = 5
+
+# Unikey
+[[block]]
+block = "custom"
+command = '''
+case "$(fcitx5-remote 2>/dev/null)" in
+  2) fcitx5-remote -n 2>/dev/null ;;
+  *) printf en ;;
+esac
+'''
+shell = "sh"
+interval = 1
+format = " $text.pango-str() "
+
+[[block]]
+block = "net"
+interval = 2
+format = " $icon $signal_strength "
+inactive_format = " $icon Offline "
+
+[[block]]
+block = "backlight"
+
+# Speaker
+[[block]]
+block = "sound"
+max_vol = 100
+show_volume_when_muted = true
+format = " $icon $volume "
+
+# Microphone
+[[block]]
+block = "sound"
+device_kind = "source"
+max_vol = 100
+show_volume_when_muted = true
+format = " $icon $volume "
+
+[[block]]
+block = "battery"
+format = " $icon $percentage "
+full_format = " $icon $percentage "
+charging_format = " $icon $percentage "
+not_charging_format = " $icon $percentage "
+empty_format = " $icon $percentage "
+
+[[block]]
+block = "time"
+interval = 60
+format = " $timestamp.datetime(f:'%a %d %b %R') "

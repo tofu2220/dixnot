@@ -1,0 +1,32 @@
+# bindings
+
+# Logo key. Use Mod1 for Alt
+set $mod Mod4
+
+# Terminal Emulator
+set $term foot
+
+# Application launcher
+set $launcher fuzzel
+
+### Key bindings
+
+#
+# App bindings:
+#
+    bindsym {
+        # Launch the terminal
+        $mod+Return exec $term
+
+        # Start your launcher
+        $mod+d exec $launcher
+
+        # Kill focused window
+        $mod+q kill
+
+        # Reload the configuration
+        $mod+Shift+c reload
+
+        # Exit Sway
+        $mod+Shift+e exec swaymsg exit
+    }

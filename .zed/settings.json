@@ -1,0 +1,34 @@
+{
+  "languages": {
+    "Nix": {
+      "language_servers": ["nil"],
+      "formatter": {
+        "external": {
+          "command": "nixfmt",
+          "arguments": [],
+        },
+      },
+      "format_on_save": "on",
+    },
+    "JSON": {
+      "enable_language_server": false,
+    },
+    "JSONC": {
+      "enable_language_server": false,
+    },
+  },
+
+  "lsp": {
+    "nil": {
+      "settings": {
+        "nil": {
+          "nix": {
+            "flake": {
+              "autoArchive": false,
+            },
+          },
+        },
+      },
+    },
+  },
+}
