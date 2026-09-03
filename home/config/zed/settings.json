@@ -5,12 +5,10 @@
 
   "ui_font_family": "DejaVu Sans",
   "buffer_font_family": "Hack Nerd Font Mono",
-
+  "agent_buffer_font_family": "DejaVu Sans",
   "terminal": {
     "font_family": "Hack Nerd Font",
   },
-
-  "agent_buffer_font_family": "DejaVu Sans",
 
   "telemetry": {
     "diagnostics": false,
