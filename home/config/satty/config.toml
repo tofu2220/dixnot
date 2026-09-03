@@ -1,25 +1,4 @@
 [general]
-
-# Open the editor on the current monitor
-fullscreen = "current-screen"
-
-# Start directly in crop mode
-initial-tool = "crop"
-
-# Do not automatically copy while editing
-auto-copy = false
-
-# Ctrl+C
 copy-command = "wl-copy"
-
-# Ctrl+S
 output-filename = "~/Pictures/Screenshots/screenshot-%Y-%m-%d_%H-%M-%S.png"
-
-# Copying should not automatically save the image
-save-after-copy = false
-
-# Keep the preview open after copy/save
-# so it can still be adjusted or saved again.
-early-exit = []
-
-default-hide-toolbars = false
+disable-notifications = false

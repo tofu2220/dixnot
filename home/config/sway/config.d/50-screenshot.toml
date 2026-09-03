@@ -1,19 +1,6 @@
 #
-# Screenshots
+# Screenshot
 #
 
-bindsym {
-    # Interactive screenshot:
-    # freeze focused monitor -> crop -> annotate -> copy/save
-    Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; output="$(swaymsg -t get_outputs -r | jq -r '"'"'.[] | select(.focused) | .name'"'"')"; grim -o "$output" -t ppm - | satty --filename -'
-
-    # Fast capture focused monitor directly to clipboard
-    Shift+Print exec sh -c 'output="$(swaymsg -t get_outputs -r | jq -r '"'"'.[] | select(.focused) | .name'"'"')"; grim -o "$output" - | wl-copy'
-
-    # Focused window -> Satty preview
-    $mod+Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; geometry="$(swaymsg -t get_tree -r | jq -r '"'"'.. | select(.focused? == true) | .rect | "\(.x),\(.y) \(.width)x\(.height)"'"'"')"; grim -g "$geometry" -t ppm - | satty --filename -'
-}
-
-# Print       → Interactive screenshot: preview, adjust crop region, annotate, then copy or save
-# Shift+Print → Capture the focused monitor directly to the clipboard
-# Mod+Print   → Capture the focused window and open it in Satty for preview/editing
+# Print → select an area → edit in Satty → copy or save
+bindsym Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; grim -g "$(slurp)" -t ppm - | satty --filename -'

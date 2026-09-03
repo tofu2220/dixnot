@@ -4,7 +4,7 @@ icons_format = " {icon} "
 icons = "material-nf"
 
 [theme]
-theme = "gruvbox-dark"
+theme = "native"
 
 [[block]]
 block = "cpu"
@@ -62,4 +62,4 @@ empty_format = " $icon $percentage "
 [[block]]
 block = "time"
 interval = 60
-format = " $timestamp.datetime(f:'%a %d %b %R') "
+format = " $icon $timestamp.datetime(f:'%a %d %b %R') "

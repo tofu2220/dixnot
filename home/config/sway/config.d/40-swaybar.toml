@@ -1,16 +1,20 @@
 # swaybar
 
 bar {
-    font pango:Hack Nerd Font 10
+    font pango:Hack Nerd Font 12
     position top
     workspace_buttons yes
     tray_output none
     status_command i3status-rs ~/.config/i3status-rust/config.toml
 
     colors {
-        focused_workspace  #fabd2f #fabd2f #282828
-        active_workspace   #b8bb26 #b8bb26 #282828
-        inactive_workspace #3c3836 #3c3836 #a89984
-        urgent_workspace   #fb4934 #fb4934 #282828
+        background  #1e1e2e
+        statusline  #cdd6f4
+        separator   #45475a
+
+        focused_workspace  #89b4fa #89b4fa #1e1e2e
+        active_workspace   #45475a #313244 #cdd6f4
+        inactive_workspace #1e1e2e #1e1e2e #a6adc8
+        urgent_workspace   #f38ba8 #f38ba8 #1e1e2e
     }
 }

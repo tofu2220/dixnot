@@ -16,3 +16,6 @@ exec swaymsg -t subscribe '["shutdown"]' && \
 
 # Start autotiling
 exec autotiling
+
+# System notification daemon
+exec mako
