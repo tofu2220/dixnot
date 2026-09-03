@@ -1,12 +1,12 @@
 [general]
 
-# Editor phủ đúng monitor hiện tại
+# Open the editor on the current monitor
 fullscreen = "current-screen"
 
-# Vào thẳng chế độ chọn/crop region
+# Start directly in crop mode
 initial-tool = "crop"
 
-# Không tự copy trong lúc đang chỉnh
+# Do not automatically copy while editing
 auto-copy = false
 
 # Ctrl+C
@@ -15,11 +15,11 @@ copy-command = "wl-copy"
 # Ctrl+S
 output-filename = "~/Pictures/Screenshots/screenshot-%Y-%m-%d_%H-%M-%S.png"
 
-# Copy không đồng nghĩa với save
+# Copying should not automatically save the image
 save-after-copy = false
 
-# Copy/save xong vẫn giữ preview,
-# để có thể tiếp tục chỉnh hoặc save thêm.
+# Keep the preview open after copy/save
+# so it can still be adjusted or saved again.
 early-exit = []
 
 default-hide-toolbars = false

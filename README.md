@@ -42,3 +42,8 @@ Available `nixos-rebuild` actions:
 - `build-vm`: Build a script to run the configuration in a virtual machine.
 - `build-vm-with-bootloader`: Build a virtual machine that uses the configured boot loader.
 - `list-generations`: List available NixOS generations.
+
+## Task
+
+- [ ] Default enable numlock in sway/config.d
+- [ ] Simplifield screenshot, maybe with satty and slurp, the current screenshot workflow is too damn complex
