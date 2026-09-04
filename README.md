@@ -1,5 +1,13 @@
 # My NixOS Configuration
 
+### Refresh a host hardware configuration
+
+Run this on the target NixOS machine after installation:
+
+```bash
+./scripts/genhw.sh t14
+```
+
 ## Usage
 
 This configuration separates machine-specific settings under `hosts/`, reusable
@@ -46,4 +54,3 @@ Available `nixos-rebuild` actions:
 ## Task
 
 - [ ] Default enable numlock in sway/config.d
-- [ ] Simplifield screenshot, maybe with satty and slurp or something, the current screenshot workflow is too damn complex
