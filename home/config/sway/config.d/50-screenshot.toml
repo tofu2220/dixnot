@@ -3,4 +3,4 @@
 #
 
 # Print → select an area → edit in Satty → copy or save
-bindsym Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; grim -g "$(slurp)" -t ppm - | satty --filename -'
+bindsym Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; grim -g "$(slurp)" -t ppm - | satty --floating-hack --filename -'
