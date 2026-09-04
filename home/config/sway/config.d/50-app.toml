@@ -30,3 +30,6 @@ set $launcher fuzzel
         # Exit Sway
         $mod+Shift+e exec swaymsg exit
     }
+
+# Keep Mousepad in floating mode
+for_window [app_id="org.xfce.mousepad"] floating enable
