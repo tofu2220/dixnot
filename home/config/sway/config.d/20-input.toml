@@ -8,3 +8,8 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
 }
+
+# Keyboard configuration
+input type:keyboard {
+    xkb_numlock enabled
+}

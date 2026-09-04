@@ -5,7 +5,11 @@
 Run this on the target NixOS machine after installation:
 
 ```bash
+# T14
 ./scripts/genhw.sh t14
+
+# Dell
+./scripts/genhw.sh dell
 ```
 
 ## Usage
