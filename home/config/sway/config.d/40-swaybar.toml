@@ -1,7 +1,7 @@
 # swaybar
 
 bar {
-    font pango:Hack Nerd Font 12
+    font pango: Hack Nerd Font 11
     position top
     workspace_buttons yes
     tray_output none
