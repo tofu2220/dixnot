@@ -32,4 +32,4 @@ set $launcher fuzzel
     }
 
 # Keep Mousepad in floating mode
-for_window [app_id="org.xfce.mousepad"] floating enable
+for_window [app_id="org.xfce.mousepad"] floating enable, border normal
