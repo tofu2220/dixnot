@@ -7,6 +7,7 @@
     ripgrep
     microfetch
     htop
+    jq
 
     # May delete later when I run out of money
     unstable.codex
