@@ -3,4 +3,10 @@
 #
 
 # Print → select an area → edit in Satty → copy or save
-bindsym Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; grim -g "$(slurp)" -t ppm - | satty --floating-hack --filename -'
+bindsym Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; grim -g "$(slurp)" -t ppm - | satty --filename -'
+
+# Ctrl+Print → focused window → edit in Satty → copy or save
+bindsym Ctrl+Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; grim -g "$(swaymsg -t get_tree -r | jq -r ".. | select(.focused? == true) | .rect | \\\"\(.x),\(.y) \(.width)x\(.height)\\\"")" -t ppm - | satty --filename -'
+
+# Shift+Print → focused display → edit in Satty → copy or save
+bindsym Shift+Print exec sh -c 'mkdir -p "$HOME/Pictures/Screenshots"; grim -o "$(swaymsg -t get_outputs | jq -r ".[] | select(.focused == true) | .name")" -t ppm - | satty --filename -'
