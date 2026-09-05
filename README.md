@@ -54,5 +54,3 @@ Available `nixos-rebuild` actions:
 - `build-vm`: Build a script to run the configuration in a virtual machine.
 - `build-vm-with-bootloader`: Build a virtual machine that uses the configured boot loader.
 - `list-generations`: List available NixOS generations.
-
-## Task
