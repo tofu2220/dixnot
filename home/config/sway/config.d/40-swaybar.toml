@@ -8,13 +8,13 @@ bar {
     status_command i3status-rs ~/.config/i3status-rust/config.toml
 
     colors {
-        background  #1e1e2e
-        statusline  #cdd6f4
-        separator   #45475a
+        background  #2c2c2e
+        statusline  #f5f5f7
+        separator   #48484a
 
-        focused_workspace  #89b4fa #89b4fa #1e1e2e
-        active_workspace   #45475a #313244 #cdd6f4
-        inactive_workspace #1e1e2e #1e1e2e #cdd6f4
-        urgent_workspace   #f38ba8 #f38ba8 #1e1e2e
+        focused_workspace  #0a84ff #0a84ff #ffffff
+        active_workspace   #3a3a3c #3a3a3c #f5f5f7
+        inactive_workspace #2c2c2e #2c2c2e #a1a1a6
+        urgent_workspace   #ff453a #ff453a #ffffff
     }
 }

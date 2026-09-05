@@ -2,10 +2,10 @@
 default_border pixel 4
 
 # Focused window: Catppuccin Mocha blue
-client.focused #89b4fa #89b4fa #1e1e2e #89b4fa #89b4fa
+client.focused   #0a84ff #2c2c2e #f5f5f7 #0a84ff #0a84ff
 
 # Unfocused window: Catppuccin Mocha gray
-client.unfocused #45475a #1e1e2e #a6adc8 #45475a #45475a
+client.unfocused #48484a #2c2c2e #a1a1a6 #48484a #48484a
 
 # Floating dialogs: retain title bars for dragging
 default_floating_border normal
