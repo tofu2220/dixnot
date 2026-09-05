@@ -15,6 +15,7 @@
 
     # Notification
     mako
+    libnotify
   ];
 
   xdg.configFile = {
