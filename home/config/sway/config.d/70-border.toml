@@ -1,11 +1,11 @@
 # Tiled windows: 1px border, no title bar
-default_border pixel 4
+default_border pixel 2
 
 # Focused window: Apple system blue
 client.focused   #0a84ff #2c2c2e #f5f5f7 #0a84ff #0a84ff
 
 # Unfocused window: Apple dark graphite
-client.unfocused #48484a #2c2c2e #a1a1a6 #48484a #48484a
+client.unfocused #636366 #2c2c2e #a1a1a6 #636366 #636366
 
 # Floating dialogs: retain title bars for dragging
 default_floating_border normal
