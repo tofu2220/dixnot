@@ -1,11 +1,11 @@
 # Tiled windows: 1px border, no title bar
 default_border pixel 4
 
-# Focused window: Catppuccin Latte blue
-client.focused #1e66f5 #1e66f5 #eff1f5 #1e66f5 #1e66f5
+# Focused window: Catppuccin Mocha blue
+client.focused #89b4fa #89b4fa #1e1e2e #89b4fa #89b4fa
 
-# Unfocused window: Latte muted gray
-client.unfocused #9ca0b0 #eff1f5 #6c6f85 #9ca0b0 #9ca0b0
+# Unfocused window: Catppuccin Mocha gray
+client.unfocused #45475a #1e1e2e #a6adc8 #45475a #45475a
 
 # Floating dialogs: retain title bars for dragging
 default_floating_border normal
