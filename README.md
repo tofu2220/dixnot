@@ -56,5 +56,3 @@ Available `nixos-rebuild` actions:
 - `list-generations`: List available NixOS generations.
 
 ## Task
-
-- [ ] Default enable numlock in sway/config.d
