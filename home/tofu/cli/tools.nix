@@ -4,6 +4,9 @@
   home.packages = with pkgs; [
     nil
     nixfmt
+
+    clang-tools
+
     ripgrep
     microfetch
     htop
